@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset */
+
+/*------------------------------------------------------------------------------------------*/
+/* Start of main.css */
+body {
+  font: normal 14pt/1.5 "Montserrat", helvetica, arial, sans-serif;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+    background-image: url("images/apple-pie.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: 50% 30%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%; /* Resize the background image to cover the entire container */
+    color: white; /* text color */
+    width: inherit; /* sets the width to be equal to its parent element */
+    height: 600px; /* The browser will calculate the height of the element */
+    position: relative;
+}
+
+header h1 {
+  font-size: 54pt;
+  position: absolute;
+  margin: 0;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  margin-top: 70px;
+  margin-right: 10%;
+  margin-bottom: 70px;
+  margin-left: 10%;
+}
+
+#container h2 {
+  font-size: 16pt;
+  font-weight: 500;
+  margin-bottom: 16pt;
+}
+
+#intro {
+  font-size: 16pt;
+}
+
+.section_img {
+  display: block;
+  margin-top: 45px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+#recipe_img {
+  width: 50%;
+}
+
+#cooking_img {
+  width: 40%;
+}
+
+section {
+  border-top: 2px solid gray;
+  padding-top: 50px;
+}
+
+ul>li {
+  text-indent: 12px;
+}
+
+ul>li:before {
+  content: "-";
+  margin-right: 2pt;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol>li {
+  padding-left: 12px;
+}
+
+ol>li:before {
+  content: counter(list) ")";
+  counter-increment: list;
+}
